@@ -7,6 +7,7 @@
   <title>Visaya Demo</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="bootstrap-slider.min.css">
+  <link rel="stylesheet" href="demo.css" >
   <link rel="icon" type="image/x-icon"
     href="https://static.visaya.solutions/static/version1568636327/frontend/visaya/shop/en_US/Magento_Theme/favicon.ico">
   <link rel="shortcut icon" type="image/x-icon"
@@ -17,103 +18,9 @@
     href="https://static.visaya.solutions/static/version1568636327/frontend/visaya/shop/en_US/images/favicon-32x32.png">
   <link rel="icon" sizes="16x16"
     href="https://static.visaya.solutions/static/version1568636327/frontend/visaya/shop/en_US/images/favicon-16x16.png">
-  <style>
-    @media (min-width: 576px) {
-      .sticky-top-2 {
-        position: sticky;
-        top: 60px;
-        background-color: aliceblue;
-        z-index: 1020;
-        border-bottom: 2px solid #dee2e6 !important;
-        border-top: 1px solid #dee2e6 !important;
-      }
-
-      .sticky-top-3 {
-        position: sticky;
-        top: 60px;
-        /* background-color: aliceblue; */
-        z-index: 1020;
-        /* border-bottom: 2px solid #dee2e6 !important; */
-        /* border-top: 1px solid #dee2e6 !important; */
-      }
-
-      .sticky-top {
-        background-color: whitesmoke;
-      }
-    }
-
-    .page-item .active {
-      z-index: 2;
-      outline: 0;
-      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
-      color: #fff;
-      text-decoration: none;
-      background-color: #0056b3;
-      border-color: #dee2e6;
-    }
-
-    .page-item .disabled {
-      color: #dee2e6;
-    }
-
-    .sort {
-      cursor: pointer;
-    }
-
-    /* This is for the sort up and down icon */
-    .sort::after {
-      margin-left: .25rem;
-      content: url('data:image/svg+xml;utf8,<svg width=\'6\' height=\'10\' viewBox=\'0 0 6 10\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'><path fill-rule=\'evenodd\' clip-rule=\'evenodd\' d=\'M3 0L6 4H0L3 0ZM3 10L0 6H6L3 10Z\' fill=\'%238898aa\'/></svg>');
-    }
-
-    /* .tooltip {
-      opacity: 1;
-    } */
-
-    /* .wrapper {
-      display: flex;
-      width: 100%;
-    }
-
-    #sidebar {
-      width: 250px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      z-index: 999;
-      background: #7386D5;
-      color: #fff;
-      transition: all 0.3s;
-    }
-
-
-
-
-    form {
-      margin: 60px 0 0 0 !important;
-    }
-
-    .ui-slider .ui-btn-inner {
-      padding: 4px 0 0 0 !important;
-    }
-
-    .ui-slider-popup {
-      position: absolute !important;
-      width: 64px;
-      height: 64px;
-      text-align: center;
-      font-size: 36px;
-      padding-top: 14px;
-      z-index: 100;
-      opacity: 0.8;
-    } */
-  </style>
 </head>
 
 <body>
-  <!-- <div class="wrapper"> -->
-
   <div class="container-fluid">
     <div class="sticky-top mb-2">
       <div class="pl-2 pt-2 pb-2 row justify-content-center align-self-center" style="background-color: white;">
@@ -142,7 +49,6 @@
         <div class="col-sm-1 col-md-2">
           Total Products: <span id="total-count"></span>
         </div>
-
       </div>
     </div>
     <div class="row">
@@ -180,7 +86,6 @@
         </div>
 
       </div>
-      <!-- <div class="col-1 col-sm-1"></div> -->
       <div class="col-sm-1 col-md-1 col-lg-8">
         <table class="table responsive-table table-striped w-100 table-fixed" id="product_grid">
           <thead>
@@ -200,8 +105,6 @@
     </div>
   </div>
   </div>
-  <!-- </div> -->
-
 
   <script src="https://code.jquery.com/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
