@@ -12,7 +12,6 @@
             registerSlider();
         });
         var apiUrl = new URL(baseUrl + "&current_page=1&per_page=" + $("#item-count").val());
-        //   var url = new URL(apiUrl);
         var prevPageUrl = formApiUrl(apiUrl, 'prev');
         var nextPageUrl = formApiUrl(apiUrl, 'next');
         getProducts(apiUrl, nextPageUrl, prevPageUrl);
@@ -29,6 +28,12 @@
 
         $("#search").click(function () {
             var newSearchApiUrl = new URL(current_url.href);
+            if ($("#from_price").text() !== "") {
+                newSearchApiUrl.searchParams.set("from_price", $("#from_price").text());
+            }
+            if ($("#to_price").text() !== "") {
+                newSearchApiUrl.searchParams.set("to_price", $("#to_price").text());
+            }
             if ($("#gf_piping").is(':checked')) {
                 newSearchApiUrl.searchParams.set('manufacturer[]', 1714);
             } else {
