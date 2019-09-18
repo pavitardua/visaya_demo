@@ -24,38 +24,35 @@
   <div class="container-fluid">
     <div class="sticky-top mb-2">
       <div class="pl-2 pt-2 pb-2 row justify-content-center align-self-center" style="background-color: white;">
-        <div class="col-sm-1 col-md-2 mb-4">
-          <img src="visaya_logo.svg" alt="visaya" />
+        <div class="col-xs-1 col-sm-2 col-md-2 mb-4">
+          <img src="visaya_logo.svg" alt="visaya">
         </div>
-        <div class="col-sm-1 col-md-2">
+        <div class="col-xs-1 col-sm-2 col-md-2">
           <div class="form-group">
-            <select class="form-control" class="w-25" id="item-count">
+            <select class="form-control" id="item-count">
               <option>10</option>
               <option>20</option>
               <option>30</option>
               <option>40</option>
             </select>
-
           </div>
-
         </div>
-        <div class="col-sm-1 col-md-6">
+        <div class="col-xs-1 col-sm-6 col-md-6">
           <ul class="pagination">
             <li class="page-item" id="prevli"><a id="prevA" class="page-link" href="#">Previous</a></li>
             <li class="page-item"><a id="nextA" class="page-link" href="#">Next</a></li>
           </ul>
-
         </div>
-        <div class="col-sm-1 col-md-2">
+        <div class="col-xs-1 col-sm-2 col-md-2">
           Total Products: <span id="total-count"></span>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-1 col-md-1 col-lg-2">
+      <div class="col-xs-1 col-sm-3 col-md-3 col-lg-2">
         <div class="sticky-top-3">
-          <div class="form-group small">
-            <button class="btn btn-primary" id="search">Narrow Your Search</button>
+          <div class="small">
+            <button class="btn btn-outline-primary btn-sm" id="search">Narrow Your Search</button>
           </div>
           <hr>
           <form>
@@ -77,16 +74,16 @@
           <div class="mt-4 small">
             <input id="ex2" type="text" value="" data-slider-min="0" data-slider-max="6500" data-slider-step="100"
               data-slider-value="[500,4000]" />
-            Between € <span id="from_price">0</span> and € <span id="to_price"></span>
+            <br>Between € <span id="from_price">0</span> and € <span id="to_price"></span>
           </div>
           <hr>
-          <div class="form-group small">
-            <button class="btn btn-secondary" onClick="javascript:window.location.reload()">Clear All Filters</button>
+          <div class="small">
+            <button class="btn btn-outline-secondary btn-sm" onClick="javascript:window.location.reload()">Clear All Filters</button>
           </div>
         </div>
 
       </div>
-      <div class="col-sm-1 col-md-1 col-lg-8">
+      <div class="col-xs-1 col-sm-8 col-md-1 col-lg-8">
         <table class="table responsive-table table-striped w-100 table-fixed" id="product_grid">
           <thead>
             <tr>
@@ -101,7 +98,6 @@
           </tbody>
         </table>
       </div>
-
     </div>
   </div>
   </div>
